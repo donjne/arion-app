@@ -26,7 +26,7 @@ export function Header() {
                 src="/arion.jpg"
                 alt="Arion Logo"
                 fill
-                className="object-contain"
+                className="object-contain rounded-lg"
                 priority
               />
             </div>
