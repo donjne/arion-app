@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Cinzel } from "next/font/google";
-import "./globals.css";
 import { Providers } from "./providers";
 
 const inter = Inter({ 
