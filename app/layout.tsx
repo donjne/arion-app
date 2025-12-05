@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${cinzel.variable}`}>
-      <body className="font-body">
+      <body>
         <Providers>
           {children}
         </Providers>
