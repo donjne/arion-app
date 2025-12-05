@@ -9,14 +9,14 @@ const config: Config = {
     extend: {
       colors: {
         arion: {
-          body: "var(--arion-body)",
-          shadow: "var(--arion-shadow)",
-          rim: "var(--arion-rim)",
-          gold: "var(--arion-gold)",
-          "bg-top": "var(--arion-bg-top)",
-          "bg-bottom": "var(--arion-bg-bottom)",
-          particle: "var(--arion-particle)",
-          text: "var(--arion-text)",
+          body: "#050608",
+          shadow: "#0F141A",
+          rim: "#223445",
+          gold: "#CE9F4F",
+          "bg-top": "#0A1A28",
+          "bg-bottom": "#0D0F12",
+          particle: "#D8A752",
+          text: "#C8A15A",
         },
       },
       fontFamily: {
