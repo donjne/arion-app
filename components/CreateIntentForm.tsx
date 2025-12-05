@@ -187,7 +187,7 @@ export function CreateIntentForm() {
               <p className="font-medium text-arion-text mb-1">Important:</p>
               <ul className="list-disc list-inside space-y-1">
                 <li>Use transparent ZEC addresses (starting with t1)</li>
-                <li>Minimum deposit: 0.001 ZEC</li>
+                <li>There is no minimum deposit.</li>
                 <li>You&apos;ll receive a NEAR deposit address after creation</li>
                 <li>Keep your Intent ID safe - you&apos;ll need it to track and withdraw</li>
               </ul>
