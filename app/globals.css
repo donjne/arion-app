@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Custom CSS Variables */
 :root {
   --arion-body: #050608;
   --arion-shadow: #0F141A;
@@ -12,48 +13,44 @@
   --arion-text: #C8A15A;
 }
 
-* {
+/* Reset & base styles */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background: linear-gradient(180deg, var(--arion-bg-top) 0%, var(--arion-bg-bottom) 100%);
+  min-height: 100dvh;
+  background: linear-gradient(180deg, var(--arion-bg-top), var(--arion-bg-bottom));
   background-attachment: fixed;
-  min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #e0e0e0;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar styling */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: var(--arion-shadow);
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--arion-rim);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: var(--arion-gold);
 }
 
-/* Custom animations */
+/* Animations */
 @keyframes shimmer {
-  0% {
-    background-position: -1000px 0;
-  }
-  100% {
-    background-position: 1000px 0;
-  }
+  from { background-position: -1000px 0; }
+  to { background-position: 1000px 0; }
 }
-
 .shimmer {
   animation: shimmer 2s infinite linear;
   background: linear-gradient(to right, transparent 0%, var(--arion-particle) 50%, transparent 100%);
@@ -61,14 +58,7 @@ body {
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
-
-.float {
-  animation: float 3s ease-in-out infinite;
-}
+.float { animation: float 3s ease-in-out infinite; }
